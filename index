@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>اjwmwl challenge</title> 
+   <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#673AB7" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="apple-touch-icon" href="./images/logos.png" />
+    <!--   manifest   -->
+    <link rel="manifest" href="./manifest.json" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./src/master.css" />
+    <link rel="shortcut icon" href="./images/logos.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="Description" content="jwmwl challenge">
+        
+</head>
+
+<body>
+    <div id="pages_container">
+        <div class="container_side_nav">
+            <div id="back_black"></div>
+            <div id="sidenav">
+                <div id="header"></div>
+                <div class="list" onclick="getScores()">
+                    <div class="iconf">
+                        <ion-icon name="cube-outline"></ion-icon>
+                    </div>
+                    <div class="titlt_list">نقاطي</div>
+                    <div class="iconl">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="list" onclick="getSetting()">
+                    <div class="iconf">
+                        <ion-icon name="cog-outline"></ion-icon>
+                    </div>
+                    <div class="titlt_list">الاعدادات</div>
+                    <div class="iconl">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="list" onclick="getAbout()">
+                    <div class="iconf">
+                        <ion-icon name="ribbon-outline"></ion-icon>
+                    </div>
+                    <div class="titlt_list">حول</div>
+                    <div class="iconl">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="list" id="container-log-out" onclick="logOut();">
+                    <div class="iconf">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </div>
+                    <div class="titlt_list"> تسجيل الخروج </div>
+                    <div class="iconl">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page1">
+            <center>
+                <h1 class="page_title">المسابقات</h1>
+            </center>
+            <div id="content_page1">
+                <div class="alert">
+                    <strong class="title_alert"> اختر المسابقة </strong>
+                    <span class="closebtn" onclick=" prompHideShow('none')">&times;</span>
+                    <a href="#" class="chaling_q">أسـئـلـة</a> <a href="#" class="chaling_q">لعبة الـذكـاء</a>
+                </div>
+                <div class="table">
+                    <div class="table_cell">
+                        <div class="play_btn" onclick="prompHideShow('block')">
+                            <div class="text_content_btn">كوكاكولا
+                                <div class="dv_line">تبقت 7 ايام </div>
+                            </div>
+                            <div class="iconl_btn">
+                                <img class="logo_market" alt="كوكاكولا" src="./asset/coca.png">
+                            </div>
+                        </div>
+                        <div class="play_btn" onclick="prompHideShow('block')">
+                            <div class="text_content_btn">7days
+                                <div class="dv_line"> تبقت 5 ايام </div>
+                            </div>
+                            <div class="iconl_btn">
+                                <img class="logo_market" alt="7days" src="./asset/7days.jpg">
+                            </div>
+                        </div>
+                        <div class="play_btn" onclick="prompHideShow('block')">
+                            <div class="text_content_btn">ابو زيد
+                                <div class="dv_line"> تبقت  2 يوم</div>
+                            </div>
+                            <div class="iconl_btn">
+                                <img class="logo_market" alt="abozaid" src="./asset/abozaid.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page2">
+            <!-- <center id="page2_title"><h1 class="page_title">الصدارة</h1></center>
+                <div id="content_page2">
+                    
+                </div> -->
+            <div class="ques_container">
+                <div id="ques_1" class="ques_card">
+                    <div class="qeus_header">
+                        من هوا اول من اكل فاكهة البطيخ?
+                    </div>
+                    <div class="the_ques">
+                        <div>
+                            <div class="div_aswer">
+                                <div class="aswer">
+                                    <div class="play_btn_ques">
+                                        <div class="text_content_btn_ques">انطلق</div>
+                                        <div class="iconl_btn_ques">
+                                            <ion-icon name="disc-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div_aswer">
+                                <div class="aswer">
+                                    <div class="play_btn_ques">
+                                        <div class="text_content_btn_ques">انطلق</div>
+                                        <div class="iconl_btn_ques">
+                                            <ion-icon name="disc-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div_aswer">
+                                <div class="aswer">
+                                    <div class="play_btn_ques">
+                                        <div class="text_content_btn_ques">انطلق</div>
+                                        <div class="iconl_btn_ques">
+                                            <ion-icon name="disc-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div_aswer">
+                                <div class="aswer">
+                                    <div class="play_btn_ques">
+                                        <div class="text_content_btn_ques">انطلق</div>
+                                        <div class="iconl_btn_ques">
+                                            <ion-icon name="disc-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav_bar">
+        <div class="table">
+            <div class="table_cell" id="more_cick" onclick="push_sidenav()">
+                <div id="more_nav">
+                    <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="table_cell" onclick="page1()">
+                <div id="home_nav">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="table_cell" onclick="page2()">
+                <div id="right_nav">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
