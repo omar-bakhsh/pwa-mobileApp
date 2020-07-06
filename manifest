@@ -1,0 +1,21 @@
+{
+  "name": "Autom",
+  "short_name": "Autom",
+  "start_url": ".",
+  "background_color": "#673AB7",
+  "theme_color": "#673AB7",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./images/logos.png",
+      "sizes": "195x195",
+      "type": "image/png",
+       "purpose": "any maskable" 
+    },
+    {
+      "src": "./images/logol.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
