@@ -28,7 +28,7 @@ function updateHistory(curr) {
     window.location.lasthash.push(window.location.hash);
     window.location.hash = curr;
 }
-document.onmouseover = function() { 
+document.onmouseover = function() {
     //User's mouse is inside the page.
     window.innerDocClick = true;
 }

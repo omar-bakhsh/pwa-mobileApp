@@ -1,2 +1,0 @@
-# pwa-mobileApp
-chaling Game
